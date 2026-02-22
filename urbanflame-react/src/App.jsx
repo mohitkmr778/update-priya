@@ -48,20 +48,24 @@ function Navbar() {
           <NavItem to="/about" text="About" />
 
           {/* SERVICES CLICK DROPDOWN */}
-          <li className="relative">
-            <button
-              onClick={() => setServiceOpen(!serviceOpen)}
-              className="hover:text-cyan-400"
-            >
-              Services ▾
-            </button>
+          <li
+  className="relative"
+  onMouseEnter={() => setServiceOpen(true)}
+  onMouseLeave={() => setServiceOpen(false)}
+>
+  {/* BUTTON */}
+  <div className="cursor-pointer hover:text-cyan-400 flex items-center gap-1 py-2">
+    Services <span>▾</span>
+  </div>
 
             {serviceOpen && (
-              <ul className="absolute top-full left-0 mt-2 w-64 bg-white text-black rounded shadow-lg">
+              <div className="absolute left-0 top-full w-64 pt-1 z-50">
+              <ul className="bg-white text-black rounded shadow-lg overflow-hidden">
                 <DropItem to="/chimney-repair-service" text="Chimney Repair Service" />
                 <DropItem to="/ro-repair-service" text="RO Water Purifier Service" />
                 <DropItem to="/hob-repair-service" text="Gas Stove / Hob Service" />
               </ul>
+            </div>
             )}
           </li>
 

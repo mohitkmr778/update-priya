@@ -11,6 +11,11 @@ export default function HobService() {
         <h4 className="text-xl font-semibold text-gray-800 mb-6">
           Modern Service Standard
         </h4>
+        <img
+            src="/images/s2.jpg"
+            alt="PriyaChimney Logo"
+            className="h-500 w-auto"
+        />
         <p className="mb-4 leading-7">
             At Priya Chimney, we provide professional and reliable gas stove repair services to keep your kitchen running safely and smoothly. A faulty gas stove can cause inconvenience and even safety risks — that’s why our experienced technicians ensure quick diagnosis and effective repair at your doorstep.
 

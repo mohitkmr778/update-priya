@@ -25,6 +25,11 @@ export default function ChimneyService() {
         <h4 className="text-xl font-semibold text-gray-800 mb-6">
           Expert Chimney Repair & Maintenance Services
         </h4>
+        <img
+            src="/images/s3.png"
+            alt="PriyaChimney Logo"
+            className="h-500 w-auto"
+        />
         <p className="mb-4 leading-7">
             A kitchen chimney plays a vital role in keeping your kitchen clean, smoke-free, and fresh. Over time, chimneys may face problems like reduced suction power, unusual noise, oil blockages, or motor issues. If your chimney is not working efficiently, it’s time to call the best chimney repair service near you. We provide professional chimney repair, cleaning, and maintenance services for all major brands and models. Our trained technicians use advanced tools to diagnose problems quickly and offer long-lasting solutions at affordable prices. Whether it’s a wall-mounted, island, or built-in chimney, we handle every type with care and expertise.
 
