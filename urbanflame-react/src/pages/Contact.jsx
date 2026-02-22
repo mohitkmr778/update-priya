@@ -36,10 +36,10 @@ export default function Contact() {
           </p>
 
           <ul className="space-y-4 text-gray-700">
-            <li>📍 Service Area: Delhi NCR</li>
-            <li>📞 Phone: <a href="tel:+917417210241" className="text-cyan-600">+91 84759 07909</a></li>
+            <li>📍 Service Area: shop No.B4, krishna market bihari market, Sector 1, Bisrakh Jalalpur, Noida, Bisrakh Jalalpur, Uttar Pradesh 201318</li>
+            <li>📞 Phone: <a href="tel:+917417210241" className="text-cyan-600">+91 7417210241</a></li>
             <li>💬 WhatsApp: <a href="https://wa.me/917417210241" className="text-cyan-600">Chat Now</a></li>
-            <li>✉️ Email: nehacare26@gmail.com</li>
+            <li>✉️ Email: priyachimney@gmail.com</li>
           </ul>
         </div>
 

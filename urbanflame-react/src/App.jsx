@@ -18,32 +18,46 @@ import { Link } from "react-router-dom";
 
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [serviceOpen, setServiceOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 z-[9999] bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
 
-        <div className="text-xl font-bold text-cyan-400">
-          PriyaChimney
-        </div>
+        {/* LOGO */}
+        <div className="flex items-center bg-white/90 px-2 py-1 rounded-md shadow">
+  <img
+    src="/images/logo1.png"
+    alt="PriyaChimney Logo"
+    className="h-10 w-auto"
+  />
+</div>
 
+        {/* MOBILE HAMBURGER */}
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
+        {/* DESKTOP MENU */}
         <ul className="hidden md:flex items-center gap-8">
-
           <NavItem to="/" text="Home" />
           <NavItem to="/about" text="About" />
 
           {/* SERVICES CLICK DROPDOWN */}
           <li className="relative">
             <button
-              onClick={() => setOpen(!open)}
+              onClick={() => setServiceOpen(!serviceOpen)}
               className="hover:text-cyan-400"
             >
               Services ▾
             </button>
 
-            {open && (
-              <ul className="absolute top-full left-0 mt-2 w-64 bg-white text-black rounded shadow-lg z-[9999]">
+            {serviceOpen && (
+              <ul className="absolute top-full left-0 mt-2 w-64 bg-white text-black rounded shadow-lg">
                 <DropItem to="/chimney-repair-service" text="Chimney Repair Service" />
                 <DropItem to="/ro-repair-service" text="RO Water Purifier Service" />
                 <DropItem to="/hob-repair-service" text="Gas Stove / Hob Service" />
@@ -63,10 +77,48 @@ function Navbar() {
           </li>
         </ul>
       </div>
+
+      {/* MOBILE & TABLET MENU */}
+      {menuOpen && (
+        <ul className="md:hidden bg-slate-800 px-4 pb-4 space-y-2">
+          <MobileItem to="/" text="Home" setMenuOpen={setMenuOpen} />
+          <MobileItem to="/about" text="About" setMenuOpen={setMenuOpen} />
+
+          {/* MOBILE SERVICES */}
+          <li>
+            <button
+              onClick={() => setServiceOpen(!serviceOpen)}
+              className="w-full text-left py-2"
+            >
+              Services ▾
+            </button>
+
+            {serviceOpen && (
+              <ul className="ml-4 space-y-1">
+                <MobileItem to="/chimney-repair-service" text="Chimney Repair Service" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/ro-repair-service" text="RO Water Purifier Service" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/hob-repair-service" text="Gas Stove / Hob Service" setMenuOpen={setMenuOpen} />
+              </ul>
+            )}
+          </li>
+
+          <MobileItem to="/contact" text="Contact" setMenuOpen={setMenuOpen} />
+
+          <li>
+            <a
+              href="tel:+917417210241"
+              className="block bg-red-600 text-center py-2 rounded"
+            >
+              📞 Call Now
+            </a>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 }
 
+/* DESKTOP NAV ITEM */
 const NavItem = ({ to, text }) => (
   <li>
     <NavLink
@@ -80,11 +132,25 @@ const NavItem = ({ to, text }) => (
   </li>
 );
 
+/* DESKTOP DROPDOWN ITEM */
 const DropItem = ({ to, text }) => (
   <li>
     <NavLink
       to={to}
-      className="block px-4 py-3 hover:bg-cyan-500 hover:text-white"
+      className="block px-4 py-2 hover:bg-cyan-500 hover:text-white"
+    >
+      {text}
+    </NavLink>
+  </li>
+);
+
+/* MOBILE ITEM */
+const MobileItem = ({ to, text, setMenuOpen }) => (
+  <li>
+    <NavLink
+      to={to}
+      onClick={() => setMenuOpen(false)}
+      className="block py-2 hover:text-cyan-400"
     >
       {text}
     </NavLink>
@@ -115,6 +181,12 @@ function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <img src="/images/slide2.jpg" className="w-full h-full object-cover" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/slide3.jpg" className="w-full h-full object-cover" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/slide4.jpg" className="w-full h-full object-cover" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -183,9 +255,9 @@ function Footer() {
         </FooterCol>
 
         <FooterCol title="Our Location">
-          Greater Noida, Delhi NCR <br />
+          shop No.B4, krishna market bihari market, Sector 1, Bisrakh Jalalpur, Noida, Bisrakh Jalalpur, Uttar Pradesh 201318 <br />
           📞 +91 7417210241 <br />
-          ✉️ support@priyachimney.shop
+          ✉️ priyachimney@gmail.com
         </FooterCol>
 
         <FooterCol title="Gallery">
@@ -221,9 +293,16 @@ function FloatingButtons() {
       {/* Call */}
       <a
         href="tel:+917417210241"
-        className="bg-red-600 p-4 rounded-full shadow-lg text-white text-xl"
+        className="bg-blue-600 p-4 rounded-full shadow-lg text-white text-xl"
       >
-        📞
+        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="white"
+    viewBox="0 0 24 24"
+    className="w-6 h-6"
+  >
+    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21 3 13.93 3 5.5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/>
+  </svg>
       </a>
     </div>
   );
