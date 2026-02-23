@@ -31,7 +31,7 @@ function CTAStats() {
   return (
     <section
       className="relative bg-fixed bg-center bg-cover py-20"
-      style={{ backgroundImage: "url('/images/cta-bg.jpg')" }}
+      style={{ backgroundImage: "url('/images/cta.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/70"></div>
 
