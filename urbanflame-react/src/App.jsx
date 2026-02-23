@@ -13,6 +13,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AboutSection from "./components/AboutSection";
 import CTAStats from "./components/CTAStats";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
 /* ================= NAVBAR ================= */
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -290,6 +292,8 @@ function Footer() {
           <FooterLink to="/ro-repair-service" text="RO Service" />
           <FooterLink to="/hob-repair-service" text="Hob Service" />
           <FooterLink to="/contact" text="Contact" />
+          <FooterLink to="/privacy-policy" text="Privacy Policy" />
+          <FooterLink to="/terms-and-conditions" text="Terms & Conditions" />
         </FooterCol>
 
         <FooterCol title="Our Location">
@@ -390,6 +394,8 @@ export default function App() {
         <Route path="/ro-repair-service" element={<RoService />} />
         <Route path="/hob-repair-service" element={<HobService />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
       <FloatingButtons />
       <Footer />
