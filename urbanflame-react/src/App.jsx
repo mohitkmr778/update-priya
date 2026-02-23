@@ -12,6 +12,7 @@ import HobService from "./pages/HobService";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AboutSection from "./components/AboutSection";
+import CTAStats from "./components/CTAStats";
 /* ================= NAVBAR ================= */
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -74,7 +75,7 @@ function Navbar() {
           <li>
             <a
               href="tel:+917417210241"
-              className="bg-red-600 px-4 py-2 rounded"
+              className="bg-blue-600 px-4 py-2 rounded"
             >
               📞 Call Now
             </a>
@@ -181,16 +182,45 @@ function Home() {
           className="h-full"
         >
           <SwiperSlide>
+            <div className="relative w-full h-full">
             <img src="/images/slide1.jpg" className="w-full h-full object-cover" />
+            {/* OVERLAY */}
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+              <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+                Welcome to <span className="text-cyan-400">Priya Chimney</span>
+              </h1>
+            </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="relative w-full h-full">
             <img src="/images/slide2.jpg" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+              <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+                Expert <span className="text-cyan-400">Chimney Repair Service</span>
+              </h1>
+            </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="relative w-full h-full">
             <img src="/images/slide3.jpg" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+              <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+                Trusted<span className="text-cyan-400"> Gas Stove & Chimney Repair Service for Every Home </span>
+              </h1>
+            </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="relative w-full h-full">
             <img src="/images/slide4.jpg" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+              <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+                Trusted<span className="text-cyan-400"> RO Repair Service for Every Home </span>
+              </h1>
+            </div>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
@@ -218,6 +248,8 @@ function Home() {
           </Card>
         </div>
       </section>
+
+      <CTAStats />
 
       {/* SERVICES */}
       <Section title="Our Services">
@@ -252,10 +284,12 @@ function Footer() {
         </FooterCol>
 
         <FooterCol title="Quick Links">
-          <FooterLink text="Home" />
-          <FooterLink text="About" />
-          <FooterLink text="Services" />
-          <FooterLink text="Contact" />
+          <FooterLink to="/"  text="Home" />
+          <FooterLink to="/about" text="About" />
+          <FooterLink to="/chimney-repair-service" text="Chimney Service" />
+          <FooterLink to="/ro-repair-service" text="RO Service" />
+          <FooterLink to="/hob-repair-service" text="Hob Service" />
+          <FooterLink to="/contact" text="Contact" />
         </FooterCol>
 
         <FooterCol title="Our Location">
@@ -274,7 +308,39 @@ function Footer() {
       </div>
 
       <div className="text-center text-sm border-t border-slate-700 mt-10 py-4">
-        © 2024 PriyaChimney. All Rights Reserved.
+       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+
+        {/* COPYRIGHT */}
+        <p className="text-sm text-center md:text-left">
+          © 2026 <span className="text-cyan-400 font-semibold">PriyaChimney</span>. All Rights Reserved.
+        </p>
+
+        {/* SOCIAL ICONS */}
+        <div className="flex items-center gap-3">
+
+          {/* FACEBOOK */}
+          <a
+            href="https://www.facebook.com/priyachimneyservice/"
+            target="_blank"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 hover:bg-blue-700 transition"
+          >
+            <i className="fa-brands fa-facebook-f text-white"></i>
+          </a>
+
+          {/* INSTAGRAM */}
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            className="w-12 h-12 flex items-center justify-center rounded-full 
+               bg-gradient-to-tr from-pink-500 to-purple-600 
+               shadow-lg text-white
+               mr-16"
+          >
+            <i className="fa-brands fa-instagram text-white"></i>
+          </a>
+
+        </div>
+      </div>
       </div>
     </footer>
   );
@@ -368,27 +434,32 @@ const FooterCol = ({ title, children }) => (
   </div>
 );
 
-const FooterLink = ({ text }) => (
-  <div className="hover:text-cyan-400 cursor-pointer">{text}</div>
+const FooterLink = ({ to, text }) => (
+  <NavLink
+    to={to}
+    className="block text-sm hover:text-cyan-400 transition"
+  >
+    {text}
+  </NavLink>
 );
 
 const services = [
   {
     title: "Kitchen Chimney Repair",
     img: "/images/g1.jpg",
-    desc: "Expert chimney cleaning & repair service.",
+    desc: "Expert chimney cleaning & repair service.A kitchen chimney plays a vital role in keeping your kitchen clean, smoke-free, and fresh. Over time, chimneys may face problems like",
     link: "chimney-repair-service",
   },
   {
     title: "RO Water Purifier Repair",
     img: "/images/ro.jpg",
-    desc: "Professional RO installation & repair.",
+    desc: "Professional RO installation & repair.For the greatest RO water purifier installation, maintenance, and repair services, Neha Chimney & RO Repair Services is your go-to source.",
     link: "ro-repair-service",
   },
   {
     title: "Gas Stove / Hob Repair",
     img: "/images/g4.jpg",
-    desc: "Reliable gas hob & stove service.",
+    desc: "Reliable gas hob & stove service.Get reliable Hob/Cooktop stove repair services in Noida with 24x7 support. Expert technicians for all brands, fast and affordable repairs.",
     link: "hob-repair-service",
   }
 ];
