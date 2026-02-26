@@ -6,7 +6,7 @@ export default function ChimneyService() {
   return (
     <>
       <Helmet>
-        <title>Chimney Repair Service | PriyaChimney</title>
+        <title>Chimney Repair Service | Priya Chimney</title>
         <meta
           name="description"
           content="Professional kitchen chimney repair, cleaning and installation service near you."

@@ -17,7 +17,7 @@ export default function RoService() {
             className="h-500 w-auto"
         />
         <p className="mb-4 leading-7">
-            For the greatest RO water purifier installation, maintenance, and repair services, Abhaya Services is your go-to source, guaranteeing your family's access to clean and safe drinking water. We offer dependable and reasonably priced services for all of the top brands of RO water purifiers because to our staff of skilled experts and customer-first philosophy. Problems including water leaks, strange noises, poor or no water flow, unpleasant tastes or odors, and broken filters or pumps are all addressed by our RO repair services. To restore your purifier's functionality and guarantee a steady supply of clean drinking water, we employ authentic replacement parts and cutting-edge equipmen
+            For the greatest RO water purifier installation, maintenance, and repair services, Priya Services is your go-to source, guaranteeing your family's access to clean and safe drinking water. We offer dependable and reasonably priced services for all of the top brands of RO water purifiers because to our staff of skilled experts and customer-first philosophy. Problems including water leaks, strange noises, poor or no water flow, unpleasant tastes or odors, and broken filters or pumps are all addressed by our RO repair services. To restore your purifier's functionality and guarantee a steady supply of clean drinking water, we employ authentic replacement parts and cutting-edge equipmen
         </p>
         <ul className="list-disc pl-6">
           <li>RO Installation</li>
