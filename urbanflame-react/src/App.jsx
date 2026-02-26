@@ -15,6 +15,10 @@ import AboutSection from "./components/AboutSection";
 import CTAStats from "./components/CTAStats";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import ChimneyGhaziabad from "./pages/ChimneyGhaziabad";
+import ChimneyDelhi from "./pages/ChimneyDelhi";
+import ChimneyNoida from "./pages/ChimneyNoida";
+import ChimneyGreaterNoida from "./pages/ChimneyGreaterNoida";
 /* ================= NAVBAR ================= */
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -67,6 +71,10 @@ function Navbar() {
                 <DropItem to="/chimney-repair-service" text="Chimney Repair Service" />
                 <DropItem to="/ro-repair-service" text="RO Water Purifier Service" />
                 <DropItem to="/hob-repair-service" text="Gas Stove / Hob Service" />
+                <DropItem to="/chimney-repair-service-ghaziabad" text="Chimney Repair Ghaziabad" />
+                <DropItem to="/chimney-repair-service-delhi" text="Chimney Repair Delhi" />
+                <DropItem to="/chimney-repair-service-noida" text="Chimney Repair Noida" />
+                <DropItem to="/chimney-repair-service-greater-noida" text="Chimney Repair Greater Noida" />
               </ul>
             </div>
             )}
@@ -396,6 +404,11 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        {/* Chimney */}
+        <Route path="/chimney-repair-service-ghaziabad" element={<ChimneyGhaziabad />} />
+        <Route path="/chimney-repair-service-delhi" element={<ChimneyDelhi />} />
+        <Route path="/chimney-repair-service-noida" element={<ChimneyNoida />} />
+        <Route path="/chimney-repair-service-greater-noida" element={<ChimneyGreaterNoida />} />
       </Routes>
       <FloatingButtons />
       <Footer />
