@@ -290,7 +290,7 @@ function Footer() {
 
         <FooterCol title="About">
           PriyaChimney offers expert kitchen appliance repair services across
-          Delhi NCR.
+          Delhi NCR.Our experienced technicians quickly diagnose issues such as low suction, motor failure, water leakage, bad taste, filter blockage, and electrical faults — and provide long-lasting, affordable solutions using genuine spare parts.
         </FooterCol>
 
         <FooterCol title="Quick Links">
