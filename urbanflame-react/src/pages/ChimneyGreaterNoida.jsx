@@ -4,11 +4,30 @@ export default function ChimneyGreaterNoida() {
   return (
     <>
       <Helmet>
-        <title>Chimney Repair Service in Greater Noida | Priya Chimney</title>
+        <title>Chimney Repair Service in Greater Noida | Kitchen Chimney Service Near Me – Priya Chimney</title>
         <meta
           name="description"
-          content="Best kitchen chimney repair service in GreaterNoida. Motor repair, cleaning, installation & maintenance with doorstep support."
+          content="Best kitchen chimney repair service in Greater Noida. We provide chimney cleaning, motor repair, installation, filter replacement & maintenance for all brands at doorstep."
         />
+        <meta
+    name="keywords"
+    content="
+    chimney repair service in Greater Noida,
+    kitchen chimney repair near me,
+    chimney cleaning service Greater Noida,
+    chimney motor repair Greater Noida,
+    chimney installation service,
+    chimney maintenance service,
+    wall mounted chimney repair,
+    island chimney repair,
+    built in chimney service,
+    kitchen chimney service near me,
+    best chimney service in Greater Noida,
+    chimney service center Greater Noida,
+    chimney repair technician near me,
+    chimney repair cost in Greater Noida
+    "
+  />
       </Helmet>
 
       {/* HERO */}
@@ -16,7 +35,7 @@ export default function ChimneyGreaterNoida() {
         <img src="/images/slide2.jpg" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <h1 className="text-white text-3xl md:text-4xl font-bold">
-            Chimney Repair Service in GreaterNoida
+            Chimney Repair Service in Greater Noida
           </h1>
         </div>
       </section>
@@ -24,12 +43,12 @@ export default function ChimneyGreaterNoida() {
       {/* CONTENT */}
       <section className="max-w-6xl mx-auto px-4 py-16 text-gray-700">
         <h2 className="text-2xl font-bold text-cyan-600 mb-4">
-          Expert Kitchen Chimney Repair in Greater Noida
+          Expert Kitchen Chimney Repair in Greater  Noida
         </h2>
 
         <p className="leading-7 mb-6">
           Priya Chimney provides professional kitchen chimney repair services
-          in GreaterNoida. We fix low suction, motor issues, oil blockage, noise
+          in Greater Noida. We fix low suction, motor issues, oil blockage, noise
           problems, and electrical faults for all brands and models.
         </p>
 

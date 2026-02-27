@@ -4,11 +4,30 @@ export default function ChimneyNoida() {
   return (
     <>
       <Helmet>
-        <title>Chimney Repair Service in Noida | Priya Chimney</title>
+        <title>Chimney Repair Service in Noida | Kitchen Chimney Service Near Me – Priya Chimney</title>
         <meta
           name="description"
-          content="Best kitchen chimney repair service in Noida. Motor repair, cleaning, installation & maintenance with doorstep support."
+          content="Best kitchen chimney repair service in Noida. We provide chimney cleaning, motor repair, installation, filter replacement & maintenance for all brands at doorstep."
         />
+        <meta
+    name="keywords"
+    content="
+    chimney repair service in Noida,
+    kitchen chimney repair near me,
+    chimney cleaning service Noida,
+    chimney motor repair Noida,
+    chimney installation service,
+    chimney maintenance service,
+    wall mounted chimney repair,
+    island chimney repair,
+    built in chimney service,
+    kitchen chimney service near me,
+    best chimney service in Noida,
+    chimney service center Noida,
+    chimney repair technician near me,
+    chimney repair cost in Noida
+    "
+  />
       </Helmet>
 
       {/* HERO */}

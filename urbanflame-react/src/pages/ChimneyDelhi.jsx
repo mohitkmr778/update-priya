@@ -4,11 +4,30 @@ export default function ChimneyDelhi() {
   return (
     <>
       <Helmet>
-        <title>Chimney Repair Service in Delhi | Priya Chimney</title>
+        <title>Chimney Repair Service in Delhi | Kitchen Chimney Service Near Me – Priya Chimney</title>
         <meta
           name="description"
-          content="Best kitchen chimney repair service in Delhi. Motor repair, cleaning, installation & maintenance with doorstep support."
+          content="Best kitchen chimney repair service in Delhi. We provide chimney cleaning, motor repair, installation, filter replacement & maintenance for all brands at doorstep."
         />
+        <meta
+    name="keywords"
+    content="
+    chimney repair service in Delhi,
+    kitchen chimney repair near me,
+    chimney cleaning service Delhi,
+    chimney motor repair Delhi,
+    chimney installation service,
+    chimney maintenance service,
+    wall mounted chimney repair,
+    island chimney repair,
+    built in chimney service,
+    kitchen chimney service near me,
+    best chimney service in Delhi,
+    chimney service center Delhi,
+    chimney repair technician near me,
+    chimney repair cost in Delhi
+    "
+  />
       </Helmet>
 
       {/* HERO */}
