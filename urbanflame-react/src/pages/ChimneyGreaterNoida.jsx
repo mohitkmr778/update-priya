@@ -43,20 +43,42 @@ export default function ChimneyGreaterNoida() {
       {/* CONTENT */}
       <section className="max-w-6xl mx-auto px-4 py-16 text-gray-700">
         <h2 className="text-2xl font-bold text-cyan-600 mb-4">
-          Expert Kitchen Chimney Repair in Greater  Noida
+          Professional Kitchen Chimney Repair Service in Greater Noida
         </h2>
 
         <p className="leading-7 mb-6">
-          Priya Chimney provides professional kitchen chimney repair services
-          in Greater Noida. We fix low suction, motor issues, oil blockage, noise
-          problems, and electrical faults for all brands and models.
+          Priya Chimney is a trusted name for kitchen chimney repair service in Greater Noida.
+  If you are searching for a reliable chimney repair near me, our expert technicians
+  provide fast and affordable doorstep service for all chimney brands and models.
         </p>
+        <p className="leading-7 mb-4">
+  Our chimney service includes complete chimney cleaning, motor repair, suction
+  problem fixing, oil blockage removal, noise issue repair, filter replacement,
+  and electrical fault correction. Whether it is a wall-mounted chimney, island
+  chimney, or built-in chimney, we handle every type professionally.
+</p>
 
+<p className="leading-7 mb-6">
+  We are known as one of the best chimney service centers in Greater Noida because
+  we use genuine spare parts, modern tools, and experienced technicians to ensure
+  long-lasting performance and customer satisfaction.
+</p>
+<p className="leading-7 mb-8">
+  We provide chimney repair services across all areas of Greater Noida including
+  Indirapuram, Vasundhara, Raj Nagar Extension, Vaishali, Kaushambi and nearby
+  locations. Our same-day chimney service ensures quick support at affordable prices.
+</p>
+<h3 className="text-xl font-semibold mb-3 text-gray-800">
+  Our Kitchen Chimney Repair Services Include
+</h3>
         <ul className="list-disc pl-6 mb-6">
-          <li>Chimney Cleaning & Servicing</li>
-          <li>Motor Repair & Replacement</li>
-          <li>Filter Cleaning & Replacement</li>
-          <li>Installation & Uninstallation</li>
+          <li>Kitchen Chimney Cleaning Service</li>
+  <li>Chimney Motor Repair & Replacement</li>
+  <li>Low Suction & Smoke Issue Fix</li>
+  <li>Oil Blockage Removal</li>
+  <li>Chimney Filter Cleaning & Replacement</li>
+  <li>Chimney Installation & Uninstallation</li>
+  <li>Annual Chimney Maintenance Service</li>
         </ul>
 
         <p className="leading-7 mb-8">
