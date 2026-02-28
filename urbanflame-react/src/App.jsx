@@ -121,6 +121,14 @@ function Navbar() {
                 <MobileItem to="/chimney-repair-service" text="Chimney Repair Service" setMenuOpen={setMenuOpen} />
                 <MobileItem to="/ro-repair-service" text="RO Water Purifier Service" setMenuOpen={setMenuOpen} />
                 <MobileItem to="/hob-repair-service" text="Gas Stove / Hob Service" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/chimney-repair-service-ghaziabad" text="Chimney Repair Ghaziabad" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/chimney-repair-service-delhi" text="Chimney Repair Delhi" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/chimney-repair-service-noida" text="Chimney Repair Noida" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/chimney-repair-service-greater-noida" text="Chimney Repair Greater Noida" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/ro-repair-service-ghaziabad" text="RO Repair Ghaziabad" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/ro-repair-service-noida" text="RO Repair Noida" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/ro-repair-service-delhi" text="RO Repair Delhi" setMenuOpen={setMenuOpen} />
+                <MobileItem to="/ro-repair-service-greater-noida" text="RO Repair Greater Noida" setMenuOpen={setMenuOpen} />
               </ul>
             )}
           </li>
