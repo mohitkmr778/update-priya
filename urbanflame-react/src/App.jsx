@@ -19,6 +19,10 @@ import ChimneyGhaziabad from "./pages/ChimneyGhaziabad";
 import ChimneyDelhi from "./pages/ChimneyDelhi";
 import ChimneyNoida from "./pages/ChimneyNoida";
 import ChimneyGreaterNoida from "./pages/ChimneyGreaterNoida";
+import ROGhaziabad from "./pages/ROGhaziabad";
+import RONoida from "./pages/RONoida";
+import RODelhi from "./pages/RODelhi";
+import ROGreaterNoida from "./pages/ROGreaterNoida";
 /* ================= NAVBAR ================= */
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -75,6 +79,10 @@ function Navbar() {
                 <DropItem to="/chimney-repair-service-delhi" text="Chimney Repair Delhi" />
                 <DropItem to="/chimney-repair-service-noida" text="Chimney Repair Noida" />
                 <DropItem to="/chimney-repair-service-greater-noida" text="Chimney Repair Greater Noida" />
+                <DropItem to="/ro-repair-service-ghaziabad" text="RO Repair Ghaziabad" />
+                <DropItem to="/ro-repair-service-noida" text="RO Repair Noida" />
+                <DropItem to="/ro-repair-service-delhi" text="RO Repair Delhi" />
+                <DropItem to="/ro-repair-service-greater-noida" text="RO Repair Greater Noida" />
               </ul>
             </div>
             )}
@@ -409,6 +417,10 @@ export default function App() {
         <Route path="/chimney-repair-service-delhi" element={<ChimneyDelhi />} />
         <Route path="/chimney-repair-service-noida" element={<ChimneyNoida />} />
         <Route path="/chimney-repair-service-greater-noida" element={<ChimneyGreaterNoida />} />
+        <Route path="/ro-repair-service-ghaziabad" element={<ROGhaziabad />} />
+        <Route path="/ro-repair-service-delhi" element={<RODelhi />} />
+        <Route path="/ro-repair-service-noida" element={<RONoida />} />
+        <Route path="/ro-repair-service-greater-noida" element={<ROGreaterNoida />} />
       </Routes>
       <FloatingButtons />
       <Footer />
